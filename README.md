@@ -1,4 +1,3 @@
----
 ## Top 4 Users by Total Spend in Last 90 Days
 Pichhle 90 din me sabse zyada total spend karne wale top 4 users ko nikalna.
 - Sirf woh orders count karne jo status 'paid' ya 'completed' me hain.
@@ -19,4 +18,3 @@ Process:
 ## - LIMIT 0,4 se sirf top 4 results aate hain.
 3. Agar result milta hai to JSON format me return hota hai.
 4. Agar result na mile to HTTP 404 ke saath error JSON return hota hai.
----
