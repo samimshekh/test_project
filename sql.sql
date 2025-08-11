@@ -1,3 +1,4 @@
+CREATE DATABASE `my_test_project`;
 CREATE TABLE `my_test_project`.`orders` (`id` INT NOT NULL AUTO_INCREMENT , `user_id` INT NOT NULL , `status` ENUM('pending', 'paid', 'completed', 'cancelled') NOT NULL , `total_amount` INT NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 INSERT INTO `my_test_project`.`orders` (`user_id`, `status`, `total_amount`, `created_at`) VALUES
 (1, 'completed', 1000, DATE_SUB(NOW(), INTERVAL 90 DAY)),
